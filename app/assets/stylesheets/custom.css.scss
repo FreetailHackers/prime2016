@@ -57,8 +57,13 @@ textarea {
     padding-top: 25px;
 }
 
-.col-md-4 {
+.col-md-4, .col-md-12 {
     text-align: center;
+}
+
+.not-found {
+    font-size: 18px;
+    padding-top: 25px;
 }
 
 h3, h1, p, .navbar-brand {

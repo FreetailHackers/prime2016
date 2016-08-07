@@ -4,6 +4,10 @@
 Keep up your personal project commits by keeping your Git-Garden alive! This project renders your commit streaks on each of your individual projects
 as small flowers that grow taller as your commit more.
 
+It includes a web-interface to render your garden in a pretty way as well as a CLI to check the status of a single local repository.
+
+Water your garden with those commits!
+
 Getting Started
 ---------------
 
@@ -27,6 +31,14 @@ sudo pip install -r requirements.txt
 python application.py
 ```
 
+To install the command line utility
+
+```bash
+npm install -g git-garden
+cd <your local repository>
+git-grow
+```
+
 Obtaining API Keys
 ------------------
 
@@ -35,7 +47,8 @@ To have the python server query the github API, you will need to set your API ke
 export GITHUB_CLIENT_ID=<ID>
 export GITHUB_CLIENT_SECRET=<SECRET>
 ```
-## Made with <3 for MLH Prime from the HackTX team.
+
+Made with <3 for MLH Prime from the HackTX team.
 
 License
 -------

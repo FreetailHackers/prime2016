@@ -4,12 +4,7 @@ var keypress = require('keypress');
 
 keypress(process.stdin);
 
-require('./index')(function(){
-  return true;
-},
-function() {
-  console.log('done');
-});
+require('./index');  
 
 process.stdin.on('keypress', function(){
   process.exit();

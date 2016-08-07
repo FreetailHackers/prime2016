@@ -11,21 +11,39 @@ var tree = function(condition, callback, streak){
     animation.secondsPerFrame(0.5);
     if(streak == 1) {
       for ( var i = 0; i < trees1.length; i++ ) {
-          trees1[i] = trees1[i] + '\r\n [GIT] Your current commit streak is '
+          trees1[i] = trees1[i] + '\r\n [GIT-GROW 🌳] Your current commit streak is 1, commit every day to grow your tree!'
       }
       animation.animate(trees1, condition, callback).bold();
     }
     if(streak == 2) {
+      for ( var i = 0; i < trees2.length; i++ ) {
+          trees2[i] = trees2[i] + '\r\n [GIT-GROW 🌳] Your current commit streak is 2, commit every day to grow your tree!'
+      }
       animation.animate(trees2, condition, callback).bold();
     }
     if(streak == 3) {
+      for ( var i = 0; i < trees3.length; i++ ) {
+          trees3[i] = trees3[i] + '\r\n [GIT-GROW 🌳] Your current commit streak is 3, commit every day to grow your tree!'
+      }
       animation.animate(trees3, condition, callback).bold();
     }
     if(streak == 4) {
+      for ( var i = 0; i < trees4.length; i++ ) {
+          trees4[i] = trees4[i] + '\r\n [GIT-GROW 🌳] Your current commit streak is 4, commit every day to grow your tree!'
+      }
       animation.animate(trees4, condition, callback).bold();
     }
     if(streak == 5) {
+      for ( var i = 0; i < trees5.length; i++ ) {
+          trees5[i] = trees5[i] + '\r\n [GIT-GROW 🌳] Your current commit streak is ' + streak + ', your tree is now fully grown! 💯'
+      }
       animation.animate(trees5, condition, callback).bold();
+    }
+    if (streak == 0){
+      for ( var i = 0; i < trees0.length; i++ ) {
+          trees0[i] = trees0[i] + '\r\n [GIT-GROW 🌳] You have not committed to this repository today 😭, commit a change to plant a tree.'
+      }
+      animation.animate(trees0, condition, callback).bold();
     }
 }
 
@@ -62,5 +80,3 @@ function getStreak(logHistory){
   });
   return streak;
 }
-
-module.exports = tree;

@@ -1,0 +1,19 @@
+{
+  "name": "git-garden",
+  "version": "1.1.0",
+  "description": "A command line utility to help keep up your GitHub commit streaks!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yuriy",
+  "license": "MIT",
+  "bin": {
+    "git-grow": "./example.js"
+  },
+  "dependencies": {
+    "ascii-animation": "latest",
+    "simple-git": "latest",
+    "keypress": "^0.2.1"
+  }
+}

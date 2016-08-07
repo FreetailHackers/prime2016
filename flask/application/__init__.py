@@ -49,13 +49,15 @@ def get_data(username):
                     if days < 0:
                         break
                     elif days == 0 or days == 1:
-                        if days == 0:
+                        if days == 0 and streak == 0:
                             today_commit = True
                             streak = 1
                         else:
                             cur_date = cur_date + timedelta(days=-1)
                             streak += 1
                     else:
+                        if streak < 0:
+                            break
                         streak -= days
                         break
                 except:

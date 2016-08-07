@@ -1,5 +1,5 @@
 <div class = "container">
-  <h1 class = "center">Repos for <i><%= @name %></i></h1>
+  <h1 class = "center"><i><%= @name %></i>'s Garden</h1>
   <br />
   <br />
   <% @response.first.second.each do |repo| %>
@@ -9,10 +9,14 @@
       </h3>
       <br />
       <p>
-        <% if repo['days'].to_i > 0 %>
-        You have commited for <%= repo['days'] %> days
+        <% if repo['days'].to_i == 1 %>
+        Your current commit streak is 1 day
+        <% elsif repo['days'].to_i > 0 %>
+        Your current commit streak is <%= repo['days'] %> days
+        <% elsif repo['days'].to_i == -1 %>
+        1 day since last commit
         <% else %>
-        You have not commited for <%= repo['days'] %> days
+        <%= repo['days'].abs %> days since last commit
         <% end %>
       </p>
       <br />
@@ -21,20 +25,20 @@
           <img src = "http://i.imgur.com/YMPD9uz.gif">
         <% elsif repo['image'].to_i == 0%>
           <img src = "http://i.imgur.com/BDvpPnr.gif">
-        <% elsif repo['image'].to_i == 1 %>  
+        <% elsif repo['image'].to_i == 1 %>
           <img src = "http://i.imgur.com/LeluIYS.gif">
-        <% elsif repo['image'].to_i == 2 %>  
+        <% elsif repo['image'].to_i == 2 %>
           <img src = "http://i.imgur.com/mx7twIi.gif">
-        <% elsif repo['image'].to_i == 3 %>  
+        <% elsif repo['image'].to_i == 3 %>
           <img src = "http://i.imgur.com/oCw1Mkh.gif">
-        <% elsif repo['image'].to_i == 4 %>  
+        <% elsif repo['image'].to_i == 4 %>
           <img src = "http://i.imgur.com/MXTClYy.gif">
-        <% elsif repo['image'].to_i == 5 %>  
-          <img src = "http://i.imgur.com/DrlLxwA.gif">  
+        <% elsif repo['image'].to_i == 5 %>
+          <img src = "http://i.imgur.com/DrlLxwA.gif">
         <% else %>
           "YO WHAT THE FUCK LESLIE"
         <% end %>
-      </p>  
+      </p>
     </div>
-  <% end %>  
+  <% end %>
 </div>

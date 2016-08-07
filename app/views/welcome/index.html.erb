@@ -1,9 +1,9 @@
 <div class="container col-md-9 col-md-offset-2">
   <div>
     <div class="navbar-form" role="search" style = "width:100%; margin-left:-5%">
-          <%= form_tag(send_name_path, method: 'get', class: 'navbar-form navbar-right',id: "search-form",style: "width:100%") do %>
-          <%= text_field_tag 'name',"",class: 'form-control col-md-7', placeholder: 'User Name', style: "width:55%;"%>
-          <%= submit_tag "Submit", class: 'btn col-md-2', :name => nil, style: "text-align:center" %>
+        <%= form_tag(send_name_path, method: 'get', class: 'navbar-form navbar-right',id: "search-form",style: "width:100%") do %>
+          <%= text_field_tag 'name',"",class: 'form-control col-md-7 input-username', placeholder: 'User Name', style: "width:35%"%>
+          <%= submit_tag "Submit", class: 'btn btn-default col-md-2', :name => nil, style: "text-align:center" %>
         <% end %>
     </div>
   </div>

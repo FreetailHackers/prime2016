@@ -3,7 +3,7 @@
   <br />
   <br />
   <% @response.first.second.each do |repo| %>
-    <div stlye = "height: 100px" class = "col-md-4">
+    <div class = "col-md-4">
       <h3>
         <%= repo['name'] %>
       </h3>
@@ -18,7 +18,7 @@
       <br />
       <p>
         <% if repo['image'] == "rip" %>
-          <img src = "http://i.imgur.com/iRRSVAG.png">
+          <img src = "http://i.imgur.com/YMPD9uz.gif">
         <% elsif repo['image'].to_i == 0%>
           <img src = "http://i.imgur.com/BDvpPnr.gif">
         <% elsif repo['image'].to_i == 1 %>  

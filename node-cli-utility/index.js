@@ -60,6 +60,11 @@ function compareDates(d1, d2) {
         return d1.getDate() == d2.getDate() && d1.getMonth() == d2.getMonth() && d1.getYear() == d2.getYear();
 }
 
+var options = {
+  fit:    'box',
+  width:  200,
+  height: 100
+}
 
 function getStreak(logHistory){
   var next = new Date(Date.now());

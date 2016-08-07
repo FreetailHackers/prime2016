@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+/node-cli-utility/node-modules
+npm-debug.log

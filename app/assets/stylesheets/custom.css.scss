@@ -7,10 +7,25 @@
     src: url(8-bit.ttf);
 }
 
-body {
+.usernamepage {
   background-image: url("clouds.gif");
   background-size: cover;
   padding-top: 60px;
+}
+
+.center{
+  font-family: BodyFont;
+  font-size: 80px;
+}
+
+.reponame{
+  font-family: BodyFont;
+  font-size: 40px;
+}
+
+.text{
+  font-family: BodyFont;
+  font-size: 25px;
 }
 
 section {

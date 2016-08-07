@@ -4,11 +4,11 @@
   <br />
   <% @response.first.second.each do |repo| %>
     <div class = "col-md-4">
-      <h3>
+      <h3 class = "reponame">
         <%= repo['name'] %>
       </h3>
       <br />
-      <p>
+      <p class = 'text'>
         <% if repo['days'].to_i == 1 %>
         Your current commit streak is 1 day
         <% elsif repo['days'].to_i > 0 %>
@@ -20,7 +20,7 @@
         <% end %>
       </p>
       <br />
-      <p>
+      <p class = 'text'>
         <% if repo['image'] == "rip" %>
           <img src = "http://i.imgur.com/YMPD9uz.gif">
         <% elsif repo['image'].to_i == 0%>

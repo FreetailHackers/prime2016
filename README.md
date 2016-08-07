@@ -1,5 +1,5 @@
 #Git-Garden
-=======================
+-----------
 
 Keep up your personal project commits by keeping your Git-Garden alive! This project renders your commit streaks on each of your individual projects
 as small flowers that grow taller as your commit more.

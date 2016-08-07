@@ -26,7 +26,8 @@ def get_data(username):
     user_data = []
     today = date.today()
     if u'message' in user_repos:
-            logger.debug('No user found.')
+        logger.debug('No user found.')
+        return jsonify({'no-results': []})
     else:
         for repo in user_repos:
             if 'svn_url' in repo:

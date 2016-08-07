@@ -10,9 +10,17 @@
 .usernamepage {
   background-image: url("clouds.gif");
   background-size: cover;
-  
 }
 
+.gardenview{
+  background-image: url("grass.gif");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.center{
+  font-family: BodyFont;
+  font-size: 80px;
+}
 .reponame{
   font-family: BodyFont;
   font-size: 40px;

@@ -23,6 +23,62 @@ textarea {
   margin-bottom: 10px;
 }
 
+.input-username {
+    margin-right: 5px;
+}
+
+.container-fluid {
+    background: white;
+}
+
+.navbar-form {
+    padding-top: 25px;
+}
+
+.col-md-4 {
+    text-align: center;
+}
+
+h3, h1, p, .navbar-brand {
+    font-family: 'Gotham SSm',sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h3 {
+    color: #3CB371;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #777;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+}
+
+.col-md-4 {
+    padding-bottom: 80px;
+    color: #3CB371;
+    font-weight: 300;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 25px;
+    color: #3CB371;
+    font-weight: 300;
+}
+
+i {
+    color: #3CB371;
+}
+
+p {
+    color: #777;
+}
+
 /* header */
 
 #logo {

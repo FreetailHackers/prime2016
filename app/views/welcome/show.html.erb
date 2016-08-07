@@ -2,12 +2,11 @@
   <h1 class = "center">Repos for <i><%= @name %></i></h1>
   <br />
   <br />
-  <% count = 0 %>
   <% @response.first.second.each do |repo| %>
     <div stlye = "height: 100px" class = "col-md-4">
-      <h2>
+      <h3>
         <%= repo['name'] %>
-      </h2>
+      </h3>
       <br />
       <p>
         <% if repo['days'].to_i > 0 %>
@@ -19,19 +18,21 @@
       <br />
       <p>
         <% if repo['image'] == "rip" %>
-        <img src = "http://i.imgur.com/iRRSVAG.png">
+          <img src = "http://i.imgur.com/iRRSVAG.png">
         <% elsif repo['image'].to_i == 0%>
-        <img src = "http://i.imgur.com/BDvpPnr.gif">
+          <img src = "http://i.imgur.com/BDvpPnr.gif">
         <% elsif repo['image'].to_i == 1 %>  
-        <img src = "http://i.imgur.com/LeluIYS.gif">
+          <img src = "http://i.imgur.com/LeluIYS.gif">
         <% elsif repo['image'].to_i == 2 %>  
-        <img src = "http://i.imgur.com/mx7twIi.gif">
+          <img src = "http://i.imgur.com/mx7twIi.gif">
         <% elsif repo['image'].to_i == 3 %>  
-        <img src = "http://i.imgur.com/oCw1Mkh.gif">
+          <img src = "http://i.imgur.com/oCw1Mkh.gif">
         <% elsif repo['image'].to_i == 4 %>  
-        <img src = "http://i.imgur.com/MXTClYy.gif">
+          <img src = "http://i.imgur.com/MXTClYy.gif">
         <% elsif repo['image'].to_i == 5 %>  
-        <img src = "http://i.imgur.com/DrlLxwA.gif">  
+          <img src = "http://i.imgur.com/DrlLxwA.gif">  
+        <% else %>
+          "YO WHAT THE FUCK LESLIE"
         <% end %>
       </p>  
     </div>

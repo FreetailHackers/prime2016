@@ -36,16 +36,23 @@ def get_data(username):
         streak = 0
         repo_commits = requests.get('https://api.github.com/repos/{0}/{1}/commits?client_id={2}&client_secret={3}'.format(username, repo_name, application.config['GITHUB_CLIENT_ID'], application.config['GITHUB_CLIENT_SECRET'])).json()
         cur_date = today
-        committed = False
+        today_commit = False
         for commit in repo_commits:
             #TODO Need to check if commit matches user
-            last_commit = repo_commits[0]['commit']['committer']['date'][0:10]
+            last_commit = commit['commit']['committer']['date'][0:10]
             last_commit_date = datetime.strptime(last_commit, '%Y-%m-%d').date()
             days = (cur_date - last_commit_date).days
+            logger.debug(days)
             #TODO Need to check correctness
-            if days <= 1:
-                streak += 1
-                cur_date = cur_date + timedelta(days=-1)
+            if days < 0:
+                break
+            elif days == 0 or days == 1:
+                if days == 0:
+                    today_commit = True
+                    streak = 1
+                else:
+                    cur_date = cur_date + timedelta(days=-1)
+                    streak += 1
             else:
                 streak -= days
                 break

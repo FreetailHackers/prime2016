@@ -16,7 +16,21 @@
     </p>
     <br />
     <p>
-      <%= repo['image'] %>
+      <% if repo['image'] == "rip" %>
+        <img src = "http://i.imgur.com/g1MCWfc.png">
+      <% elsif repo['image'].to_i == 0%>
+        <img src = "http://i.imgur.com/nuijUek.gif">
+      <% elsif repo['image'].to_i == 1 %>  
+        <img src = "http://i.imgur.com/pnh7887.gif">
+      <% elsif repo['image'].to_i == 2 %>  
+        <img src = "http://i.imgur.com/R4NweKO.gif">
+      <% elsif repo['image'].to_i == 3 %>  
+        <img src = "http://i.imgur.com/kEk8eCK.gif">
+      <% elsif repo['image'].to_i == 4 %>  
+        <img src = "http://i.imgur.com/oRpn4xR.gif">
+      <% elsif repo['image'].to_i == 5 %>  
+        <img src = "http://i.imgur.com/oeJHNrV.gif">  
+      <% end %>
     </p>
     
     

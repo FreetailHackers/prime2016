@@ -2,9 +2,30 @@
 @import 'bootstrap';
 
 /* universal */
+@font-face {
+    font-family: BodyFont;
+    src: url(8-bit.ttf);
+}
 
-body {
+.usernamepage {
+  background-image: url("clouds.gif");
+  background-size: cover;
   padding-top: 60px;
+}
+
+.center{
+  font-family: BodyFont;
+  font-size: 80px;
+}
+
+.reponame{
+  font-family: BodyFont;
+  font-size: 40px;
+}
+
+.text{
+  font-family: BodyFont;
+  font-size: 25px;
 }
 
 section {
@@ -13,6 +34,7 @@ section {
 
 textarea {
   resize: vertical;
+  font-family: BodyFont;
 }
 
 .center {
@@ -131,3 +153,22 @@ p {
     color: #468847;
     text-align: left;
  }
+ .btn {
+   background:url(button.gif);
+   background-size: 100%;
+   height:64px;
+   width: 200px;
+   max-width: 100%;
+  color: #FFF;
+  display: inline-block;
+  font-family: BodyFont;
+  font-size: 35px;
+  margin-left:20px;
+  margin-top: 200px;
+}
+.form-control{
+     height:64px;
+  font-family: BodyFont;
+  font-size: 35px;
+    margin-top: 200px;
+}

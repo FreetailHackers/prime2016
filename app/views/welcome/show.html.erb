@@ -1,0 +1,27 @@
+<div class = "center">
+  <h1>Repos for <i><%= @name %></i></h1>
+  <br />
+  <br />
+  <% @response.first.second.each do |repo| %>
+    <h2>
+      <%= repo['name'] %>
+    </h2>
+    <br />
+    <p>
+      <% if repo['days'].to_i > 0 %>
+        You have commited for <%= repo['days'] %> days
+      <% else %>
+        You have not commited for <%= repo['days'] %> days
+      <% end %>
+    </p>
+    <br />
+    <p>
+      <%= repo['image'] %>
+    </p>
+    
+    
+    <br />
+    <br />
+    
+  <% end %>  
+</div>

@@ -26,8 +26,8 @@ module GitTree
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     config.cache_classes = true
-    config.assets.precompile += [
-        'custom.css.scss','button.gif','clouds.gif','grass.gif'
-      ]
+    # config.assets.precompile += [
+        # 'custom.css.scss','button.gif','clouds.gif','grass.gif'
+      # ]
   end
 end

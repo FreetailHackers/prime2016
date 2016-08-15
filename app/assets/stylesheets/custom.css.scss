@@ -13,7 +13,7 @@
 }
 
 .gardenview{
-  background-image: url("grass.gif");
+  background-image: asset-data-url("grass.gif");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -157,7 +157,7 @@ p {
     text-align: left;
  }
  .btn {
-   background:url(button.gif);
+   background:asset-data-url("button.gif");
    background-size: 100%;
    height:64px;
    width: 200px;

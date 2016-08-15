@@ -54,7 +54,7 @@ group :development do
   gem 'pry-byebug'
 end
 
-group :production, :staging do
-      gem 'rails_12factor'
-    end
+group :production do
+  gem 'rails_12factor'
+end
 
